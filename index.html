@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de lluvia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Sistema de monitoreo de lluvia</h1>
+
+    <div id="login" class="caja">
+        <h2>Iniciar sesión</h2>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario">
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave">
+        <button onclick="validarLogin()">Ingresar</button>
+        <p id="error-login" class="error" role="alert"></p>
+    </div>
+
+    <div id="panel" class="oculto">
+        <div class="caja">
+            <h2>Registro de lluvia</h2>
+            <label for="direccion">Dirección de la zona:</label>
+            <input type="text" id="direccion">
+            <label for="inicio">Hora de inicio:</label>
+            <input type="time" id="inicio">
+            <label for="fin">Hora de fin:</label>
+            <input type="time" id="fin">
+            <label for="precipitacion">Precipitación registrada (mm):</label>
+            <input type="number" id="precipitacion" min="0" step="any">
+            <label for="responsable">Nombre del usuario que registra:</label>
+            <input type="text" id="responsable">
+            <button id="boton-registrar" onclick="registrarLluvia()">Registrar lluvia</button>
+            <p id="error-registro" class="error" role="alert"></p>
+            <h3>Resultado</h3>
+            <div id="reloj" class="oculto"><span class="girar">◷</span> Calculando...</div>
+            <p id="resultado" aria-live="polite">Todavía no hay un registro.</p>
+        </div>
+
+        <div class="caja">
+            <h2>Gráfica de precipitaciones</h2>
+            <p>Precipitación registrada por zona, en milímetros.</p>
+            <div id="grafica">Sin registros.</div>
+        </div>
+
+        <div class="caja">
+            <h2>Foto de la zona</h2>
+            <video id="video" autoplay playsinline class="oculto"></video>
+            <canvas id="foto" class="oculto"></canvas>
+            <p id="mensaje-camara">Cámara apagada.</p>
+            <button onclick="encenderCamara()">Encender cámara</button>
+            <button onclick="tomarFoto()">Tomar foto</button>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
