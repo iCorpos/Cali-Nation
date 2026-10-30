@@ -1,38 +1,86 @@
-# Caso B: Monitoreo de lluvia
+# 🌧️ Cali-Nation | Sistema de Monitoreo de Lluvias
 
-Taller de HTML, CSS y JavaScript.
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Project-Academic-blue?style=for-the-badge" alt="Academic Project">
+</p>
 
-## Uso
+<p align="center">
+  **Sistema web para el registro, seguimiento y monitoreo de precipitaciones en diferentes zonas de Cali, Colombia.**
+</p>
 
-Abrir `index.html` en Chrome o Edge.
+---
 
-- Usuario: CVC
-- Contraseña: Lluvias
-- Clave para registrar otra zona: CLIMA
+## 📌 Descripción del proyecto
 
-Ingresar dirección, hora de inicio, hora de fin, precipitación en mm y nombre de quien registra. Después del reloj se muestra el resultado y se agrega la precipitación registrada a una gráfica de barras.
+**Cali-Nation** es una aplicación web desarrollada como parte del Caso B del proyecto académico de Desarrollo Web. Su propósito es facilitar el registro y monitoreo de información relacionada con las precipitaciones en diferentes zonas de la ciudad de Cali.
 
-Los registros están en un arreglo y se borran al recargar. La cámara permite tomar una foto de la zona; requiere permiso del navegador y una cámara disponible. La foto se muestra en pantalla, sin enviarla a un servidor.
+La aplicación cuenta con una interfaz de acceso y una estructura web diseñada para gestionar la información del monitoreo de lluvias, permitiendo centralizar los registros y apoyar su consulta y seguimiento.
 
-## Cálculos del enunciado
+## 🎯 Objetivo
 
-- Referencia del ejercicio: 14 mm.
-- Tiempo total: diferencia entre fin e inicio, en horas, dentro del mismo día.
-- Fórmula solicitada: precipitación registrada × 14 × tiempo total.
-- Ajuste: se suma 5,3 % al resultado de la fórmula si el inicio está entre 15:00 y 18:00, incluidos los extremos. La comparación con 14 mm usa la precipitación original.
+Desarrollar una solución web que permita organizar y gestionar información sobre las precipitaciones en distintas zonas de Cali, contribuyendo al seguimiento de los registros de lluvia mediante herramientas digitales.
 
-El enunciado no especifica la unidad del tiempo, el sentido del ajuste ni la duración del reloj. Se eligieron horas, un aumento y una animación de 1,5 segundos, respectivamente. El producto se muestra separado de la precipitación porque no tiene unidad mm.
+## ⚙️ Características principales
 
-Ejemplo: 20 mm de 15:00 a 16:30 son 1,5 horas. El cálculo es 20 × 14 × 1,5 = 420; el ajuste es 22,26 y el resultado final es 442,26. La comparación indica que los 20 mm originales están por encima de 14 mm.
+- 🌧️ **Monitoreo de lluvias:** enfoque en el seguimiento de las precipitaciones por zonas de Cali.
+- 📋 **Registro de información:** interfaz destinada a la gestión de registros de lluvia.
+- 🔐 **Acceso al sistema:** pantalla de inicio de sesión para ingresar a la aplicación.
+- 🖥️ **Interfaz web:** entorno desarrollado con tecnologías web.
+- 📊 **Gestión de datos:** organización y procesamiento de la información asociada al monitoreo.
 
-El acceso es una práctica local con credenciales en JavaScript, no una autenticación segura de producción. Usar un navegador normal: el navegador integrado de algunas aplicaciones no admite `prompt()`.
+## 🛠️ Tecnologías utilizadas
 
-## Archivos
+| Tecnología | Descripción |
+|---|---|
+| HTML5 | Estructura y contenido de la aplicación. |
+| CSS3 | Diseño visual y estilos de la interfaz. |
+| JavaScript | Lógica e interactividad del sistema. |
+| GitHub | Control de versiones y alojamiento del código fuente. |
 
-- `index.html`: estructura.
-- `css/estilos.css`: presentación.
-- `js/app.js`: funciones, validaciones, cálculos, gráfica y cámara.
+## 📂 Estructura del proyecto
 
-## GitHub
+```text
+Cali-Nation/
+│
+├── index.html
+│
+├── css/
+│   └── Archivos de estilos
+│
+├── js/
+│   └── Archivos JavaScript
+│
+└── README.md
+```
 
-Subir estos archivos y carpetas a un repositorio público, con `index.html` en la raíz. Para activar GitHub Pages: Settings → Pages → Deploy from a branch → main → / (root).
+## 🚀 Acceso al proyecto
+
+Puedes consultar el código fuente y los archivos del proyecto directamente desde este repositorio.
+
+**Ejecución local:**
+
+1. Descarga o clona este repositorio.
+2. Abre la carpeta del proyecto.
+3. Ejecuta el archivo `index.html` desde tu navegador.
+4. Ingresa al sistema utilizando las credenciales establecidas para la actividad académica.
+
+## 🌎 Alcance del proyecto
+
+El proyecto está enfocado en el monitoreo de precipitaciones en la ciudad de Cali, con énfasis en la organización de información por zonas y el desarrollo de una herramienta web para apoyar el seguimiento de los registros.
+
+## 🎓 Contexto académico
+
+Este desarrollo corresponde al **Caso B – Monitoreo de lluvia**, realizado en el marco de las actividades académicas de Desarrollo Web.
+
+---
+
+<p align="center">
+  **CALI-NATION**
+  <br>
+  Sistema de Monitoreo de Lluvias 🌧️
+  <br>
+  <i>Desarrollo web aplicado al seguimiento de precipitaciones en Cali, Colombia.</i>
+</p>
