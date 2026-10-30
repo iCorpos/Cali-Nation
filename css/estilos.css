@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf1f7;
+    color: #222;
+    margin: 20px;
+}
+
+h1 { text-align: center; color: #245b85; }
+h2 { color: #245b85; }
+
+.caja {
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    max-width: 550px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+label { display: block; margin-top: 12px; }
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #999;
+}
+
+button {
+    background-color: #245b85;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+button:disabled { opacity: 0.5; cursor: wait; }
+.oculto { display: none; }
+.error { color: #aa2020; }
+#resultado { line-height: 1.6; white-space: pre-line; }
+video, canvas { width: 100%; margin-top: 10px; background-color: #eee; }
+.dato-zona { margin-top: 15px; overflow-wrap: anywhere; }
+.fondo-barra { background-color: #eee; height: 22px; margin-top: 5px; }
+.barra { background-color: #3d86bd; height: 22px; }
+.girar { display: inline-block; font-size: 28px; animation: vuelta 1s linear infinite; }
+@keyframes vuelta { to { transform: rotate(360deg); } }
